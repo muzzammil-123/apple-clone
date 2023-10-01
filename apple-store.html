@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+    ">
+    <style>
+        @font-face {
+            font-family: "Helveticabold";
+            src: url(/projects/assets/font/Helvetica-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: "helveticattf";
+            src: url(/projects/assets/font/Helvetica.ttf);
+        }
+
+        @font-face {
+            font-family: SFprodisplay;
+            src: url(/projects/assets/font/SF-Pro-Text-Medium.otf);
+        }
+
+        body {
+            /* overflow-x: hidden; */
+            font-family: "SFprodisplay";
+        }
+
+        .container-fluid {
+            background-color: #f5f5f5;
+        }
+
+        .div1 {
+            font-family: "helveticattf";
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list {
+            list-style-type: none !important;
+        }
+
+        #div {
+            font-size: large;
+        }
+
+        .c {
+            background-color: white !important;
+        }
+
+        .h1 {
+            font-family: "Helveticabold";
+            /* border: 1px solid; */
+            font-size: 3.9rem;
+            width: 770px;
+            margin-top: 70px;
+        }
+
+        .span {
+            color: gray;
+        }
+
+        .mt {
+            margin-top: 70px;
+            margin-left: 0px;
+            /* display: inline-block; */
+        }
+
+        .help {
+            margin-left: 200px;
+        }
+
+        .help1 {
+            background-image: url(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-chat-specialist-icon-202305?wid=35&hei=35&fmt=jpeg&qlt=95&.v=1684947928869);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: left;
+            background-position-y: center;
+            padding-left: 60px;
+        }
+
+        .help2 {
+            width: 180px;
+            margin-left: 260px;
+            position: relative;
+            top: -33px;
+        }
+
+        svg {
+            margin-left: 210px;
+            position: relative;
+            top: 13px;
+            /* padding-top: 10px; */
+        }
+
+        .div5 {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+            margin-top: 70px !important;
+        }
+
+        figcaption {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .h11 {
+            font-size: 2rem;
+            margin-top: 80px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .span1 {
+            font-weight: 500;
+            margin-bottom: 100px;
+        }
+
+        .par {
+            position: relative;
+            color: white;
+        }
+
+        .child {
+            position: absolute;
+            left: -560px;
+            top: 20px;
+            /* border: 1px solid; */
+            width: max-content;
+        }
+
+
+
+        .rp-child {
+            font-weight: 500;
+        }
+
+        .rp-par {
+            margin-bottom: 15px;
+        }
+
+        .rp-par2 {
+            margin-bottom: 10px;
+        }
+
+        .rp-child2 {
+            font-weight: bolder;
+        }
+
+        .rp-child21 {
+            font-weight: bold;
+        }
+
+        .rp-par3 {}
+
+        .rp-child3 {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        .h {
+            height: 750px;
+            /* width: max-content; */
+        }
+
+        .h5 {
+            position: relative;
+            left: -50px;
+
+        }
+
+
+        .img-fluid-div {
+            width: 5000px;
+        }
+
+
+        .specialist {
+            /* border: 1px solid; */
+            position: relative;
+            left: -100px;
+            top: 30px;
+        }
+
+        .speciallist {
+            /* border: 1px solid; */
+            position: absolute;
+            left: -100px;
+            top: 10px;
+            margin-top: 10px;
+            margin-bottom: 50px !important;
+        }
+
+        .new {
+            color: #EC6000;
+            /* font-size: 1.5rem; */
+        }
+
+        .video {
+            position: relative;
+            top: 50px;
+            left: -110px;
+            /* font font-size: 1rem; */
+        }
+
+        .position{
+            position: relative;
+            top: 15px;
+            height: 365px;
+        }
+        .position1{
+            /* position: relative;
+            top: 95px; */
+            height: 365px;
+        }
+
+        .position2{
+            position: relative;
+            top: 40px;
+            left: -80px;
+            font-size: 50% !important  ;
+        }
+
+        .position3{
+            font-size: 2rem;
+            /* border: 1px solid; */
+            width: 450px;
+        }
+
+        .position4{
+            position: relative;
+            top: 250px;
+        }
+
+        .h12{
+            position: relative;
+            left: -50px;
+        }
+
+        .m111{
+            background-color: white;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f5f5f5;">
+
+    <div class="container-fluid div1">
+        <div class="row">
+            <div class="col-12 border w-100">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li class="list-unstyled"><a href="#" class="text-black"><img width="50"
+                                src="/bootstrap/bootstrap-assets/images/Web capture_13-9-2023_13934_www.apple.com.jpeg"
+                                alt=""></a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Store</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Mac</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">iPad</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">iPhone</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Watch</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Vision</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">AirPods</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">TV & Home</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Entertainment</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Accessories</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black">Support</a></li>
+                    <li class="list-unstyled"><a href="#" class="text-black"><img width="150"
+                                src="/bootstrap/bootstrap-assets/images/Web capture_13-9-2023_131027_www.apple.com.jpeg"
+                                alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid c">
+        <div class="row">
+            <div id="div" class="col-12 d-flex justify-content-center pt-3">
+                <p>Get &dollar;200-&dollar;600 in credit toward iPhone 15 Pro When you in an iPhone 11 or Higher.
+                    <span><a href="#">Shop Now ></a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="h1 ms-3">
+                    Store. <span class="span">
+                        The best to buy the product you love.
+                    </span>
+                </h1>
+            </div>
+            <div class="col-4 mt">
+                <div class="com">
+                    <span class="help help1 fw-bold d-flex flex-column w-75">Need Shopping help?
+                        <a href="#" class="d-block fw-normal">Ask a specialist</a>
+                    </span>
+                    <svg viewBox="0 0 35 35"
+                        class=" as-svgicon as-svgicon-applestore as-svgicon-base as-svgicon-applestorebase" role="img"
+                        aria-hidden="true" width="35px" height="35px">
+                        <path fill="none" d="M0 0h35v35H0z"></path>
+                        <path
+                            d="M17.5 32.217a1.136 1.136 0 01-1-.576l-1.812-2.525c-.053-.087-.1-.116-.156-.116H10.5A4.5 4.5 0 016 24.5V10.518a4.5 4.5 0 014.5-4.5h14a4.5 4.5 0 014.5 4.5V24.5a4.5 4.5 0 01-4.5 4.5h-4.036a.149.149 0 00-.129.074l-1.867 2.609a1.108 1.108 0 01-.968.534zM10.5 7A3.519 3.519 0 007 10.518V24.5a3.5 3.5 0 003.5 3.5h4.036a1.151 1.151 0 011 .576l1.808 2.524c.128.213.211.17.284.042l1.868-2.61a1.125 1.125 0 01.968-.532H24.5a3.5 3.5 0 003.5-3.5V10.518A3.519 3.519 0 0024.5 7z">
+                        </path>
+                        <path
+                            d="M21.35 14.635a2.326 2.326 0 00-1.078 1.94 2.215 2.215 0 001.353 2.051 4.733 4.733 0 01-.693 1.444c-.429.617-.9 1.246-1.584 1.246s-.858-.408-1.661-.408c-.77 0-1.045.419-1.672.419s-1.078-.573-1.584-1.29a6.312 6.312 0 01-1.056-3.363 2.719 2.719 0 012.541-3.021c.682 0 1.232.441 1.65.441s1.023-.463 1.782-.463a2.348 2.348 0 012.002 1.004zm-3.729-1.114c-.055 0-.1-.011-.143-.011 0-.033-.011-.11-.011-.187a2.26 2.26 0 01.561-1.378 2.19 2.19 0 011.485-.772 1.074 1.074 0 01.011.2A2.329 2.329 0 0119 12.794a1.967 1.967 0 01-1.379.727z">
+                        </path>
+                    </svg>
+                    <div class="help help2 fw-bold mt-2 ">
+                        Visit an Apple Store?
+                        <a href="#" class=" fw-normal">Find one near you ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid div5">
+        <div class="imges w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-14-16-mac-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=1670959891635"
+                alt="">
+            <figcaption class="text-center">Mac</figcaption>
+        </div>
+        <div class="imges w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202309_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=1692971740190"
+                alt="">
+            <figcaption class="text-center">iPhone</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664912135437"
+                alt="">
+            <figcaption class="text-center">iPad</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202309?wid=400&hei=260&fmt=png-alpha&.v=1693703822208"
+                alt="">
+            <figcaption class="text-center">Apple Watch</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202209?wid=400&hei=260&fmt=png-alpha&.v=1660676485885"
+                alt="">
+            <figcaption class="text-center">AirPods</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=400&hei=260&fmt=png-alpha&.v=1625783380000"
+                alt="">
+            <figcaption class="text-center">AirTags</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202210?wid=400&hei=260&fmt=png-alpha&.v=1664628458484"
+                alt="">
+            <figcaption class="text-center">Apple TV 4K</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-homepod-nav-202301?wid=400&hei=260&fmt=png-alpha&.v=1670389216654"
+                alt="">
+            <figcaption class="text-center">HomePod</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-accessories-nav-202309?wid=400&hei=260&fmt=png-alpha&.v=1692803114952"
+                alt="">
+            <figcaption class="text-center">Accessories</figcaption>
+        </div>
+        <div class="imges  w-25"><img width="200px"
+                src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=400&hei=260&fmt=png-alpha&.v=1653339351054"
+                alt="">
+            <figcaption class="text-center">Apple Gift Card</figcaption>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="h11">
+                    The Latest.
+                    <span class="span span1">
+                        Take a look at what's new, right now.
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-start w">
+                <div class="rp-sbka-baap overflow-scroll d-flex">
+                    <div class="img-fluid-div">
+                        <img class="rounded-5 h" width=""
+                            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-15-pro-202309?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1692910040844"
+                            alt="">
+                    </div>
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child">
+                                    PRE-ORDER-NOW
+                                </div>
+                                <div class="rp-child">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2 ">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Titanium</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3">
+                                <p class="rp-child3">From &dollar;999 or &dollar;41.62/mo. for 24 mp.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-15-202309?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1692719973220"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par text-black">
+                                <div class="rp-child">
+                                    PRE-ORDER-NOW
+                                </div>
+                                <div class="rp-child">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2 text-black">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Newphoria</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-black">
+                                <p class="rp-child3">From &dollar;799 or &dollar;33.25/mo. for 24 mp.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-s9-202309?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1692720183508"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child">
+                                    APPLE WATCH SERIES 9
+                                </div>
+                                <div class="rp-child">
+                                    <!-- IPHONE 15 PRO -->
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Smarter. Brighter. Mighter.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3">
+                                <p class="rp-child3">From &dollar;399 or &dollar;33.25/mo. for 12 mo.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-ultra-202309?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1692720471465"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child text-black">
+                                    APPLE WATCH ULTRA 2
+                                </div>
+                                <div class="rp-child">
+                                    <!-- IPHONE 15 PRO -->
+                                </div>
+                            </div>
+                            <div class="rp-par2 text-black">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Next level adventure</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-black">
+                                <p class="rp-child3">From &dollar;799 or &dollar;66.58/mo. for 12 mp.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watchbands-202309?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1692720583186"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child">
+                                    PRE-ORDER-NOW
+                                </div>
+                                <div class="rp-child">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2 text-black">
+                                    <h2 class="rp-child21">Shop carbon neutral Apple
+                                        <br>
+                                        Watch bands
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-black">
+                                <p class="rp-child3">Learn more at apple.com/2030.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-airpods-pro-202209?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661016986712"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child">
+                                    AIRPODS PRO (2ND GENERATION)
+                                </div>
+                                <div class="rp-child text-black">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Adaptive Audio. <br>
+                                        Now Playing.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3">
+                                <p class="rp-child3">&dollar;249.00 or &dollar;41.50/mo. for 6 mo.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-bts-202306?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1685655505966"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child text-black">
+                                    LIMITED TIME OFFER
+                                </div>
+                                <div class="rp-child">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2 text-black">
+                                    <h2 class="rp-child21">Save on Mac or iPad <br>
+                                        for college.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-black">
+                                <p class="rp-child3">Plus get a gift card upto &dollar;150, <br>
+                                    20% off AppleCare+, and more."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-macbook-air-202306?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1683844828182"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child text-black">
+                                    MAC BOOK AIR 15"
+                                </div>
+                                <div class="rp-child">
+                                    IPHONE 15 PRO
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2 text-black">
+                                    <h2 class="rp-child21">Impressively big. <br> Impressively thin.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-black">
+                                <p class="rp-child3">From &dollar;1299 or &dollar;108.25/mo. for 12 mo.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                        src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-air-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645636337374"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child">
+                                    IPAD AIR
+                                </div>
+                                <div class="rp-child text-black">
+                                    IPAD AIR
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2">
+                                    <h2 class="rp-child21">Light. bright. full of might.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3">
+                                <p class="rp-child3">From &dollar;599 or &dollar;49.91/mo. for 12 mo.*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="h11 h12">
+                    Help is here. <span class="span span1">
+                        Whenever and however you need it
+                    </span>
+                    </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12  d-flex align-items-start w">
+                <div class="rp-sbka-baap  overflow-x-scroll d-flex">
+                    <div class="img-fluid-div">
+                        <img class="rounded-5 h" width=""
+                            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-specialist-help-202305?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1684946879038"
+                            alt="">
+                    </div>
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par ">
+                                <div class="rp-child ">
+                                    PRE-ORDER-NOW
+                                </div>
+                                <div class="rp-child speciallist text-dark ">
+                                    APPLE SPECIALIST
+                                </div>
+                            </div>
+                            <div class="rp-par2 ">
+                                <div class="rp-child2 specialist text-black">
+                                    <h2 class="rp-child21">Shop one on one with a <br> Specialists. Online or in a
+                                        store.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3">
+                                <p class="rp-child3">From &dollar;999 or &dollar;41.62/mo. for 24 mp.*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rounded-5 h"
+                      width="700"  height="500" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-specialist-video-202309?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1694270835539"
+                        alt="">
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par text-light">
+                                <div class="rp-child">
+                                    <!-- PRE-ORDER-NOW -->
+                                </div>
+                                <div class="rp-child new speciallist">
+                                    NEW
+                                </div>
+                            </div>
+                            <div class="rp-par2 text-black">
+                                <div class="rp-child2 video text-light">
+                                    <h2 class="rp-child21">Shop with a Specialist <br>
+                                        Over a video.</h2>
+                                </div>
+                            </div>
+                            <div class="rp-par3 text-light video fw-lighter video1">
+                                <p class="rp-child3">Choose your next device <br> in a guided, one-way <br> video
+                                    session</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="rounded-5 position1"
+                      width="700" height="300"  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-25-apps-202108?wid=960&hei=480&fmt=p-jpg&qlt=95&.v=1626223748000"
+                        alt="">
+                    <img class="rounded-5 position"
+                      width="700" height="300"  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-25-genius-202108?wid=960&hei=480&fmt=p-jpg&qlt=95&.v=1626384443000"
+                        alt="">
+                    </div>
+                    <div class="par">
+                        <div class="child">
+                            <div class="rp-par">
+                                <div class="rp-child text-black">
+                                    <!-- APPLE WATCH SERIES 9 -->
+                                </div>
+                                <div class="rp-child">
+                                    <!-- IPHONE 15 PRO -->
+                                </div>
+                            </div>
+                            <div class="rp-par2">
+                                <div class="rp-child2 text-black">
+                                    <!-- <h2 class="rp-child21">Smarter. Brighter. Mighter.</h2> -->
+                                </div>
+                            </div>
+                            <div class="rp-par3 fw-light position2 text-black">
+                                <p class="rp-child3 position3">Get to know your new device with a personal session</p>
+                            </div>
+                            <div class="rp-par3 fw-light position2 text-black">
+                                <p class="rp-child3 position3 position4">Get expert service <span class="d-block">and support at the</span> Genius bar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="h11 h12">
+                    The Apple Store difference. <span class="span span1">
+                        Even more reason to shop with us
+                    </span>
+                    </h1>   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+
+</html>
